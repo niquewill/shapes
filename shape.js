@@ -3,11 +3,13 @@
 //USE STRICT
 'use strict';
 //PULL THE DATA
+var Shape = require ("./shape");
 var Square = require("./Square");
 var Pentagon = require("./Pentagon");                   
 var Triangle = require("./Triangle");                    
 //Establish a basic constructor function to apply to other shapes for later
 //CAPITALIZE
+
 function Shape (shapename) {
 	if (!(this instanceof Shape)) {
 		return new Shape(shapename);
@@ -16,12 +18,12 @@ function Shape (shapename) {
 	this.shapename = shapename;
 }
 
-//In the constructor, must define "type" as well as pass methods "get_shapeName" and "total_length"
+
+//In the constructor, must define "type" as well as pass methods "get_shapeName"/get_type and "total_length"
 Shape.prototype.get_type = function() {
-    
-    return this.__proto__.constructor;
-	console.log("This is a " + this.shapename);
+	console.log("This is a " + this.get_type);
 };
+
 
 // Shape.prototype.get_totalLength = function() {
 // 	//Declare empty variable
@@ -38,5 +40,4 @@ Shape.prototype.get_type = function() {
 // 	return length;
 // }
 
-//want to export the object we create so it may be read by other files and shapes.
 module.exports = Shape;
