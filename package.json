@@ -1,0 +1,24 @@
+{
+  "name": "shapes",
+  "version": "1.0.0",
+  "description": "I used prototypes to implement a Shape \"class\", and Triangle; Square; and Pentagon \"subclasses\". The instanceof operator should behave properly when used on instances of any of the three classes.",
+  "main": "src/shapes.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niquewill/shapes.git"
+  },
+  "keywords": [
+    "Go2GirlSqrd"
+  ],
+  "author": "Monique Hawkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niquewill/shapes/issues"
+  },
+  "homepage": "https://github.com/niquewill/shapes#readme"
+}
